@@ -1,0 +1,19 @@
+solar_file          kurudz_1.0nm.dat
+albedo  ALB         # Surface albedo
+sza SZA               # Solar zenith angle
+rte_solver disort2    # Radiative transfer equation solver
+wavelength LAM
+
+wc_file wc.dat
+wc_set_tau 10
+wc_layer
+#wc_properties mie
+#wc_properties_interpolate
+wc_set_gg 0.85
+wc_set_ssa 1
+
+zout sur toa
+#verbose
+#no_molecular_absorption
+#no_rayleigh
+transmittance

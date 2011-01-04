@@ -1,0 +1,16 @@
+data_files_path /export/home/emde_cl/libRadtran/data
+
+sza SZA               # Solar zenith angle
+rte_solver disort2    # Radiative transfer equation solver
+wavelength 500
+albedo ALB
+
+wc_file wc.dat
+wc_set_tau TAU
+wc_layer
+wc_set_gg GG
+
+zout sur toa
+no_absorption
+no_rayleigh
+transmittance

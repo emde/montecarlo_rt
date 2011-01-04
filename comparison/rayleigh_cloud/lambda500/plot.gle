@@ -1,0 +1,59 @@
+size 18 10
+
+amove 0 0
+
+begin graph
+   size 10 10	
+   !nobox
+   key pos tr 
+	
+   data flx_sur_alb0.dat d1
+   data flx_sur_alb0.2.dat d2 
+   data flx_sur_alb0.5.dat d3
+   data flx_sur_alb1.dat d4	
+
+   !d1 marker dot msize 0.7
+   d1 line lstyle 1 key "A=0"
+   d2 line lstyle 2 key "A=0.2"
+   d3 line lstyle 3 key "A=0.5"	
+   d4 line lstyle 4 key "A=1"			
+   !key hei 0.6 nobox
+   
+   xaxis min 0.1 max 100  log
+   yaxis min 0 max 1 ! log
+   
+   xtitle "\tau" !dist 0.3 hei 0.6
+   ytitle "transmittance" !dist 0.3 hei 0.6
+   ! x2title ""
+   
+end graph
+
+
+amove 8.5 0
+
+begin graph
+   size 10 10	
+   !nobox
+   key pos tr 
+	
+   data flx_toa_alb0.dat d1		
+   data flx_toa_alb0.2.dat d2 	
+   data flx_toa_alb0.5.dat d3
+   data flx_toa_alb1.dat d4
+
+   !d1 marker dot msize 0.7
+   d1 line lstyle 1 key "A=0"	
+   d2 line lstyle 2 key "A=0.2"
+   d3 line lstyle 3 key "A=0.5"	
+   d4 line lstyle 4 key "A=1"		
+		
+   !key hei 0.6 nobox
+   
+   xaxis min 0.1 max 100  log
+   yaxis min 0 max 1 ! log
+   
+   xtitle "\tau" !dist 0.3 hei 0.6
+   ytitle "reflectance" !dist 0.3 hei 0.6
+   ! x2title ""
+   
+end graph

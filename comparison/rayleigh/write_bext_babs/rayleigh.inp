@@ -1,0 +1,9 @@
+solar_file	kurudz_1.0nm.dat
+albedo  0         # Surface albedo
+sza 0               # Solar zenith angle
+rte_solver disort2    # Radiative transfer equation solver
+wavelength LAM
+
+zout sur toa
+verbose
+transmittance

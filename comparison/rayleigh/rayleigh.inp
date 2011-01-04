@@ -1,0 +1,21 @@
+data_files_path /export/home/emde_cl/libRadtran/data
+
+atmosphere_file /export/home/emde_cl/libRadtran/data/atmmod/afglus.dat
+solar_file  /export/home/emde_cl/libRadtran/data/solar_flux/kurudz_1.0nm.dat
+albedo  ALB         # Surface albedo
+sza SZA               # Solar zenith angle
+rte_solver disort2    # Radiative transfer equation solver
+wavelength LAM
+
+#wc_file wc.dat
+#wc_set_tau 30
+#wc_layer
+#wc_properties mie
+#wc_properties_interpolate
+#wc_set_gg 0.86
+
+zout sur toa
+#verbose
+#no_molecular_absorption
+#no_rayleigh
+transmittance
