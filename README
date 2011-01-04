@@ -1,0 +1,5 @@
+Directories
+
+script: Includes script for Monte Carlo radiative transfer course
+
+comparisons/rayleigh/write_bext_babs: Includes scattering and absorption coefficents needed for task 3.
