@@ -1,0 +1,84 @@
+size 18 18
+!set lwidth 0.06
+!set hei 0.5
+!set font psh
+
+amove 0 8.5
+begin graph
+   nobox
+   size 10 10 	
+   
+   data rayleigh_phase_theta.dat d1=c1,c2
+   	      
+   d1 line lstyle 1 !key ""
+   
+   !key hei 0.6 nobox
+   
+   yaxis min 0 !max 10 ! log
+   !xaxis min 0 max 10 ! log
+   
+   xtitle "\theta\ [ degrees ]"  !dist 0.3 hei 0.6
+   ytitle "P_R ( \theta\ )" !dist 0.3 hei 0.6
+   ! x2title ""
+   
+end graph
+
+amove 8.5 8.5
+begin graph
+   nobox
+   size 10 10 	
+   
+   data rayleigh_phase_mu.dat d1=c1,c2
+   	      
+   d1 line lstyle 1 !key ""
+   
+   !key hei 0.6 nobox
+   
+   yaxis min 0 !max 10 ! log
+   !xaxis min 0 max 10 ! log
+   
+   xtitle "\mu"  !dist 0.3 hei 0.6
+   ytitle "P_R\ ( \mu\ )" !dist 0.3 hei 0.6
+   ! x2title ""
+   
+end graph
+
+amove 0 0
+begin graph
+   nobox
+   size 10 10 	
+   
+   data rayleigh_cumulative.dat d1=c1,c2
+   	      
+   d1 line lstyle 1 !key ""
+   
+   !key hei 0.6 nobox
+   
+   yaxis min 0 !max 10 ! log
+   !xaxis min 0 max 10 ! log
+   
+   xtitle "\mu"  !dist 0.3 hei 0.6
+   ytitle "F_R\ ( \mu\ )" !dist 0.3 hei 0.6
+   ! x2title ""
+   
+end graph
+
+amove 8.5 0
+begin graph
+   nobox
+   size 10 10 	
+   
+   data rayleigh_hist.dat d1=c1,c2
+   	      
+   bar d1 lstyle 1 !key ""
+   
+   !key hei 0.6 nobox
+   
+   yaxis min 0! max 10 ! log
+   !xaxis min 0 max 10 ! log
+   
+   xtitle "\mu"  !dist 0.3 hei 0.6
+   ytitle "# random values ( \mu\ )" !dist 0.3 hei 0.6
+   ! x2title ""
+   
+end graph
